@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journals",
+  "info": {
+    "singularName": "journal",
+    "pluralName": "journals",
+    "displayName": "期刊列表",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "name": {
+      "type": "string"
+    },
+    "time": {
+      "type": "date"
+    },
+    "info": {
+      "type": "richtext"
+    }
+  }
+}

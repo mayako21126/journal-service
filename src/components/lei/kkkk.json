@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lei_kkkks",
+  "info": {
+    "displayName": "kkkk"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}
